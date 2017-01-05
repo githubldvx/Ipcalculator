@@ -96,7 +96,7 @@ class IPCalculator(object):
         min_range[-1] += 1
         max_range = self.broadcast
         max_range[-1] -= 1
-        return "%s-%s" % (".".join(map(str, min_range)), ".".join(map(str, max_range)))
+        return "%s - %s" % (".".join(map(str, min_range)), ".".join(map(str, max_range)))
 
     # def number_of_host(self):
     #     return (2 ** sum(map(lambda x: sum(c == '1' for c in x), self.negation_Mask))) - 2
